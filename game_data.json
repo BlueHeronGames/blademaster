@@ -13,7 +13,11 @@
 		{
 			"id": "dungeon_basic",
 			"path": "assets/tiles/dungeon.png",
-			"tile_size": 32
+			"tile_size": 32,
+			"tiles": [
+				{ "id": 0, "type": "floor" },
+				{ "id": 1, "type": "wall" }
+			]
 		}
 	],
 	"rooms": [
