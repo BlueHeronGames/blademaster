@@ -1,5 +1,5 @@
 param (
-	[string]$TemplatePath = (Join-Path (Split-Path -Parent $PSScriptRoot) "dcm/game_template")
+	[string]$TemplatePath = (Join-Path (Split-Path -Parent $PSScriptRoot) "dungeon-crawler-maker/game_template")
 )
 
 $ErrorActionPreference = "Stop"
@@ -51,8 +51,8 @@ try {
 
 	Write-Host "Copied game data and assets into '$templateRoot'."
 	Write-Host "Inspect or run your export now."
-	Write-Host "Press Enter to delete the copied files and exit..." -NoNewline
-	[void][System.Console]::ReadLine()
+	Write-Host "Press any key to delete the copied files and exit..." -NoNewline
+	[void][System.Console]::ReadKey($true)
 }
 finally {
 	foreach ($item in $copiedItems) {
