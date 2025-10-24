@@ -12,7 +12,7 @@
 	"tilesets": [
 		{
 			"id": "dungeon_basic",
-			"path": "assets/tiles/dungeon.png",
+			"path": "assets/tiles/town.png",
 			"tile_size": 32,
 			"tiles": [
 				{ "id": 0, "type": "floor" },
@@ -23,7 +23,9 @@
 	"rooms": [
 		{
 			"type": "rectangle",
-		"number": 5
+			"number": 5,
+			"min_size": [4, 6],
+			"max_size": [10, 12]
 		}
 	],
 	"monsters": {
