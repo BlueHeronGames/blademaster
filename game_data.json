@@ -12,7 +12,7 @@
 	"tilesets": [
 		{
 			"id": "dungeon_basic",
-			"path": "assets/tiles/town.png",
+			"path": "assets/images/tiles/town.png",
 			"tile_size": 32,
 			"tiles": [
 				{ "id": 0, "type": "floor" },
@@ -30,7 +30,7 @@
 	],
 	"monsters": {
 		"goblin": {
-			"sprite": "assets/monsters/goblin.png",
+			"sprite": "assets/images/monsters/goblin.png",
 			"hp": 20,
 			"attack": 5,
 			"defense": 2,
