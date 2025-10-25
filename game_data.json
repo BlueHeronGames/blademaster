@@ -36,7 +36,7 @@
 			"defense": 2,
 			"ai_type": "passive",
 			"loot_table": [
-				{ "name": "goblin meat", "Probability": 0.25 }
+				{ "name": "goblin meat", "probability": 0.25 }
 			]
 		}
 	},
