@@ -24,10 +24,6 @@ function Copy-SourceFile {
 		throw "Source '$Source' does not exist."
 	}
 
-	if (Test-Path -Path $Destination) {
-		throw "Destination '$Destination' already exists. Aborting to avoid overwriting.";
-	}
-
 	Copy-Item -LiteralPath $Source -Destination $Destination -Recurse
 }
 
