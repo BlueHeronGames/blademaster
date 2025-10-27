@@ -1,50 +1,68 @@
 {
 	"version": "1.0.0",
 	"project": {
-		"title": "Blademaster",
 		"author": "Blue Heron",
-		"version": "1.0.0",
-		"description": "You upset the Demon King, and he sent his cronies to wipe out your villagers. Journey thorough ruined villages, haunted forests, thundering plains, and finally the Demon King's castle to slay him and vindicate your dead villagers."
+		"description": "You upset the Demon King, and he sent his cronies to wipe out your villagers. Journey thorough ruined villages, haunted forests, thundering plains, and finally the Demon King's castle to slay him and vindicate your dead villagers.",
+		"title": "Blademaster",
+		"version": "1.0.0"
 	},
-	"config": {
-		"can_pass_turn": true,
-		"zoom": 2
+	"gameplay": {
+		"can_pass_turn": true
 	},
+	"visuals": {
+		"zoom": 2.0
+	},
+	"items": {
+		"goblin meat": {
+			"restore_health": 50.0,
+			"type": "consumable"
+		}
+	},
+	"monsters": {
+		"goblin": {
+			"ai_type": "passive",
+			"attack": 5.0,
+			"defense": 2.0,
+			"hp": 20.0,
+			"loot_table": [
+				{
+					"name": "goblin meat",
+					"probability": 0.25
+				}
+			],
+			"sprite": "assets/images/monsters/goblin.png"
+		}
+	},
+	
+	"rooms": [
+		{
+			"max_size": [
+				10.0,
+				12.0
+			],
+			"min_size": [
+				4.0,
+				6.0
+			],
+			"number": 5.0,
+			"type": "rectangle"
+		}
+	],
 	"tilesets": [
 		{
 			"id": "dungeon_basic",
 			"path": "assets/images/tiles/town.png",
-			"tile_size": 32,
+			"tile_size": 32.0,
 			"tiles": [
-				{ "id": 0, "type": "floor" },
-				{ "id": 1, "type": "wall" }
+				{
+					"id": 0.0,
+					"type": "floor"
+				},
+				{
+					"id": 1.0,
+					"type": "wall"
+				}
 			]
 		}
-	],
-	"rooms": [
-		{
-			"type": "rectangle",
-			"number": 5,
-			"min_size": [4, 6],
-			"max_size": [10, 12]
-		}
-	],
-	"monsters": {
-		"goblin": {
-			"sprite": "assets/images/monsters/goblin.png",
-			"hp": 20,
-			"attack": 5,
-			"defense": 2,
-			"ai_type": "passive",
-			"loot_table": [
-				{ "name": "goblin meat", "probability": 0.25 }
-			]
-		}
-	},
-	"items": {
-		"goblin meat": {
-			"type": "consumable",
-			"restore_health": 50
-		}
-	}
+	]
 }
